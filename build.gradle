@@ -18,8 +18,8 @@ plugins {
 
 allprojects {
     repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
         google()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
     }
 }
