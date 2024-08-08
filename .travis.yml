@@ -12,7 +12,7 @@ script:
   ./gradlew clean check --stacktrace
 
 jdk:
-  - oraclejdk8
+  - openjdk11
 
 notifications:
   email: false
