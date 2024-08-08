@@ -1,21 +1,22 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
+        minSdk 26
+        compileSdk 34
+        targetSdkVersion 34
     }
 
     resourcePrefix 'spark_'
+    namespace 'com.robinhood.spark'
 }
 
 dependencies {
-    implementation 'com.android.support:support-annotations:26.1.0'
+    implementation 'androidx.annotation:annotation:1.8.1'
 
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.mockito:mockito-core:2.18.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:3.12.4'
 }
 
 apply from: 'gradle-mvn-push.gradle'
