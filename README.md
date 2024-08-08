@@ -1,3 +1,10 @@
+Full credits go to the original authors at: https://github.com/robinhood/spark
+======
+
+This repository is only meant to serve as a maintenance update over the original, in order to allow users of this lib to disable jetifier.
+
+If [this PR](https://github.com/robinhood/spark/pull/82) gets merged, i'll archive this repo.
+
 ![](images/sample.png)
 
 Spark
@@ -182,12 +189,20 @@ vast majority of the time.
 
 Download
 --------
-
+Add jitpack maven repo
 Gradle:
 
 ```groovy
-implementation 'com.robinhood.spark:spark:1.2.0'
+repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+
+dependencies {
+	        implementation 'com.github.labreu-bc:spark:1.3.0'
+	}
 ```
+
 
 
 License
