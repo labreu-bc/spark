@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
 before_install:
-  - sdk install java 17.0.7-open
+  - sdk install 17.0.12-amzn
