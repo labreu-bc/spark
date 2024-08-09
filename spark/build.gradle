@@ -26,6 +26,20 @@ android {
     }
 }
 
+project.afterEvaluate {
+    publishing {
+        publications {
+            aar(MavenPublication) {
+                groupId 'com.robinhood'
+                version '1.3.0'
+                artifactId 'spark'
+
+                artifact bundleReleaseAar
+            }
+        }
+    }
+}
+
 dependencies {
     implementation 'androidx.annotation:annotation:1.8.1'
 
