@@ -1,4 +1,4 @@
-Full credits go to the original authors at: https://github.com/robinhood/spark
+This is a fork of https://github.com/robinhood/spark. Full credits go to the original authors.
 ======
 
 This repository is only meant to serve as a maintenance update over the original, in order to allow users of this lib to disable jetifier.
