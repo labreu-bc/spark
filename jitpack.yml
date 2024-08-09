@@ -3,8 +3,5 @@ jdk:
   - openjdk17
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
-  - sdk update
-  - sdk install java 17.0.2-open
-  - sdk use java 17.0.2-open
 notifications:
   email: false
