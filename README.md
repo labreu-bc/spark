@@ -7,18 +7,23 @@ If [this PR](https://github.com/robinhood/spark/pull/82) gets merged, i'll archi
 
 Download
 --------
-Add jitpack maven repo
-Gradle:
+Add jitpack maven repo and the dependency and thats it.
 
+In your build.gradle:
 ```groovy
-repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
+
+
+buildscript {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+// -------------- //
 
 dependencies {
-	        implementation 'com.github.labreu-bc:spark:1.3.0'
-	}
+    implementation 'com.github.labreu-bc:spark:1.3.0'
+}
 ```
 
 
